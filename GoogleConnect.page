@@ -1,0 +1,13 @@
+<apex:page showHeader="false" sidebar="false" cache="false" contentType="text/html" controller="GoogleConnect" >
+	<apex:form >
+		<apex:messages />
+		<apex:commandbutton id="updateSpreadsheet" value="Set Google Spreadsheet Cell Value" action="{!updateSpreadsheet}"/>
+		<br/><br/>
+		<apex:commandbutton id="createContact" value="Create Contact" action="{!createContact}"/>
+		<br/><br/>
+		<apex:commandbutton id="updateCalendar" value="Update Calendar" action="{!updateCalendar}"/>
+		<br/><br/>
+		Action Result: 
+		<apex:outputText id="outputText" value="{!valueToShow}"/>
+	</apex:form>
+</apex:page>
